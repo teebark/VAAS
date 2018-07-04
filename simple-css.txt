@@ -1,8 +1,14 @@
-/* Formats the schedule tab */
+/* Formats the line height for each tab */
+#vaas-schedule .elementor-tab-content {
+    font-size: 1.1em;
+    line-height: .5em;
+}
+/* Formats the tables, table2 for 2 columns, tabl3 for 3 columns */
 #vaas-schedule .table2 {
     display:grid;
     grid-template-columns: 1fr 4fr;
     grid-column-gap: 0;width: 400px;
+    font-size: 1.1em;
     line-height: 2em;
 }
 /* Get rid of empty p tags */
@@ -12,18 +18,18 @@
 /* Format col1 */
 .col1 {
     color: #ff3300;
-    font-size: 1.2em;
 }
 /* Format col2 */
 .col2 {
     color: black;
-    font-size: 1.2em;
 }
 #vaas-schedule .table3 {
     display:grid;
-    grid-template-columns: 1fr 4fr 2fr;
-    grid-column-gap: 0;width: 700px;
-    line-height: 2em;
+    grid-template-columns: 1fr 3fr 2fr;
+    grid-column-gap: 0;width: 600px;
+    font-size: 1.1em;
+    line-height: 1.4em;
+    grid-row-gap: .5em;
 }
 /* Get rid of empty p tags */
 #vaas-schedule .table3 p {
@@ -32,15 +38,12 @@
 /* Format col1 */
 .col1 {
     color: #ff3300;
-    font-size: 1.2em;
 }
 /* Format col2 */
 .col2 {
     color: black;
-    font-size: 1.2em;
 }
 /* Format col3 */
 .col3 {
-    color: black;
-    font-size: 1.2em;
+    color: green;
 }
