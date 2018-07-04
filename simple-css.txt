@@ -1,0 +1,46 @@
+/* Formats the schedule tab */
+#vaas-schedule .table2 {
+    display:grid;
+    grid-template-columns: 1fr 4fr;
+    grid-column-gap: 0;width: 400px;
+    line-height: 2em;
+}
+/* Get rid of empty p tags */
+#vaas-schedule .table2 p {
+    display: none;
+}
+/* Format col1 */
+.col1 {
+    color: #ff3300;
+    font-size: 1.2em;
+}
+/* Format col2 */
+.col2 {
+    color: black;
+    font-size: 1.2em;
+}
+#vaas-schedule .table3 {
+    display:grid;
+    grid-template-columns: 1fr 4fr 2fr;
+    grid-column-gap: 0;width: 700px;
+    line-height: 2em;
+}
+/* Get rid of empty p tags */
+#vaas-schedule .table3 p {
+    display: none;
+}
+/* Format col1 */
+.col1 {
+    color: #ff3300;
+    font-size: 1.2em;
+}
+/* Format col2 */
+.col2 {
+    color: black;
+    font-size: 1.2em;
+}
+/* Format col3 */
+.col3 {
+    color: black;
+    font-size: 1.2em;
+}
