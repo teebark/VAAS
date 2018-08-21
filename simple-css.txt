@@ -1,49 +1,138 @@
 /* Formats the line height for each tab */
-#vaas-schedule .elementor-tab-content {
-    font-size: 1.1em;
-    line-height: .5em;
+#vaas-tabs .elesmentor-tab-content p {
+font-size: 1.2em;
+line-height: 1.2em;
+margin: 5px 0;
 }
-/* Formats the tables, table2 for 2 columns, tabl3 for 3 columns */
-#vaas-schedule .table2 {
-    display:grid;
-    grid-template-columns: 1fr 4fr;
-    grid-column-gap: 0;width: 400px;
-    font-size: 1.1em;
-    line-height: 2em;
+#vaas-tabs h2 {
+font-family: helvetica, arial, sans-serif; 
+color: #000000;
+margin-bottom: 4px;
+}
+#vaas-tabs h3{
+font-family: helvetica, arial, sans-serif;
+font-size: 1.3em;
+padding-top: 0;
+color: #114de0;
+}
+#vaas-tabs h3:last-child {
+padding-bottom: 10px;
+}
+/* Formats the tables, table2 for 2 columns, table3 for 3 columns */
+#vaas-tabs .table2 {
+display:grid;
+grid-template-columns: 1fr 4fr;
+grid-column-gap: 0;
+width: 400px;
+font-size: 1.1em;
+line-height: 2em;
+}
+/* Default table2 formst */
+#vaas-tabs .table2 {
+display:grid;
+grid-template-columns: 1fr 6fr;
+grid-column-gap: 0;
+width: 400px;
+font-size: 1.1em;
+line-height: 2em;
+}
+/* Formats vaas rotation table in venues tab */
+#vaas-tabs [data-tab="1"] .table2 {
+display:grid;
+grid-template-columns: 1fr 6fr;
+grid-column-gap: 0;
+width: 400px;
+font-size: 1.1em;
+line-height: 2em;
 }
 /* Get rid of empty p tags */
-#vaas-schedule .table2 p {
-    display: none;
+#vaas-tabs .table2 p {
+display: none;
+}
+
+/* Format table2 headers */
+#vaas-tabs .table2 .hdr1,
+#vaas-tabs .table2 .hdr2 {
+color: black;
+}
+/* Format table3 headers */
+#vaas-tabs .table3 .hdr1,
+#vaas-tabs .table3 .hdr2,
+#vaas-tabs .table3 .hdr3 {
+color: black;
 }
 /* Format col1 */
-.col1 {
-    color: #ff3300;
+#vaas-tabs .table2 .col1 {
+color: #ff3300;
 }
 /* Format col2 */
-.col2 {
-    color: black;
+#vaas-tabs .table2 .col2 {
+color: black;
 }
-#vaas-schedule .table3 {
-    display:grid;
-    grid-template-columns: 1fr 3fr 2fr;
-    grid-column-gap: 0;width: 600px;
-    font-size: 1.1em;
-    line-height: 1.4em;
-    grid-row-gap: .5em;
+/* Default table3 formst */
+#vaas-tabs .table3 {
+display:grid;
+grid-template-columns: 1fr 1fr 1fr;
+grid-column-gap: 0;width: 600px;
+font-size: 1em;
+line-height: 1.4em;
+grid-row-gap: .5em;
+}
+/* Format tabele in schedule tab */
+#vaas-tabs [data-tab="3"] .table3 {
+display:grid;
+grid-template-columns: 1fr 3fr 2fr;
+grid-column-gap: 0;width: 600px;
+font-size: 1em;
+line-height: 1.4em;
+grid-row-gap: .5em;
 }
 /* Get rid of empty p tags */
-#vaas-schedule .table3 p {
-    display: none;
+#vaas-tabs .table3 p {
+display: none;
 }
 /* Format col1 */
-.col1 {
-    color: #ff3300;
+#vaas-tabs .table3 .col1 {
+color: #ff3300;
 }
 /* Format col2 */
-.col2 {
-    color: black;
+#vaas-tabs .table3 .col2 {
+color: black;
 }
 /* Format col3 */
-.col3 {
-    color: green;
+#vaas-tabs .table3 .col3 {
+color: green;
+margin-left: 1em;
 }
+/* format door prizes */
+#vaas-tabs .table2 {
+display:grid;
+grid-template-columns: 1fr 2fr;
+grid-column-gap: 0;width: 600px;
+font-size: 1.1em;
+line-height: 2em;
+}
+/* Get rid of empty p tags */
+#vaas-tabs .table2 p {
+display: none;
+}
+/* Format col1 */
+#vaas-tabs .table2 .col1 {
+color: #ff3300;
+}
+/* Format col2 */
+#vaas-tabs .table2 .col2 {
+color: black;
+}
+
+/* Format hdr1-3 */
+.hdr1, .hdr2, .hdr3 {
+text-align: center;
+font-weight: 600;
+background-color: #9eee9087;
+}
+/* standard link behaviour */
+.elementor-tab-content a, .elementor-tab-content h3 a {
+color: #0000ff;
+text-decoration: underline;
+} 
